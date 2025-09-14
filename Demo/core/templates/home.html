@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+  <hr>
+  <p style="font-weight: bold; font-size: 1.2em; text-align: center;">
+    My First Django project!
+  </p>
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="{% url 'about' %}">About Me</a>
+  </div>
+  <hr>
+{% endblock %}
