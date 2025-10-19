@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+  <h1>Home page</h1>
+
+  <p>Features you can explore:</p>
+
+  <ul>
+    {% for f in features %}
+      <li>{{ f }}</li>
+    {% empty %}
+      <li>No features to display at the moment.</li>
+    {% endfor %}
+  </ul>
+
+  <hr>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo obcaecati iusto molestiae 
+    accusamus repellat sit dolores ducimus inventore itaque quas excepturi sequi, dolorum aperiam 
+    qui soluta incidunt facilis repellendus.
+  </p>
+
+  <p>
+    Feel free to explore our site using the navigation links above!
+  </p>
+{% endblock %}
